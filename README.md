@@ -26,6 +26,7 @@ It expands on Gauss' method
 ## Example 1 (Default)
 ### 1 to 10 by 1
 Command: `cargo run`
+
 Result:
 ```
 Start: 1
@@ -39,6 +40,7 @@ Sum: 55
 ## Example 2 (Integer arguments)
 ### 10 to 100 by 5
 Command: `cargo run -- 10 100 5`
+
 Result:
 ```
 Start: 10
@@ -52,6 +54,7 @@ Sum: 1045
 ## Example 3 (Float arguments)
 ### 1 to 10 by 0.5
 Command: `cargo run -- 1 10 0.5`
+
 Result:
 ```
 Start: 1

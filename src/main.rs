@@ -62,13 +62,13 @@ fn main() {
 fn sum(args_object: &Arguments) -> f64 {
     let _end_sum: f64 = args_object.start + args_object.end;
     let _multiplier: f64 = multiplier(args_object);
-    println!("Multiplier: {}", _multiplier);
+    // println!("Multiplier: {}", _multiplier);
     _end_sum * _multiplier
 }
 
 fn multiplier(args_object: &Arguments) -> f64 {
     let _num_addend: i32 = num_addend(args_object);
-    println!("Number of Addends: {}", _num_addend);
+    // println!("Number of Addends: {}", _num_addend);
     _num_addend as f64 / 2f64
 }
 
