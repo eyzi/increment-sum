@@ -7,7 +7,10 @@ e.g. 10 to 30 by increment of 5 (10+15+20+25+30)
 
 ## How does it work?
 It expands on [Gauss' Summation](https://letstalkscience.ca/educational-resources/backgrounders/gauss-summation): `Sum(1..n) = (n(n+1))/2`.
+
+
 Formula: `Sum(x..y,z) = (x+y)*(((y-x)/z)+1)`
+
 Where:
 - `x` is the start number
 - `y` is the end number
