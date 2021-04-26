@@ -6,7 +6,13 @@ It just sums up some numbers from beginning to end by increment in constant time
 e.g. 10 to 30 by increment of 5 (10+15+20+25+30)
 
 ## How does it work?
-It expands on Gauss' method
+It expands on [Gauss' Summation](https://letstalkscience.ca/educational-resources/backgrounders/gauss-summation): `Sum(1..n) = (n(n+1))/2`.
+Formula: `Sum(x..y,z) = (x+y)*(((y-x)/z)+1)`
+Where:
+- `x` is the start number
+- `y` is the end number
+- `z` is the increment
+- both `x` and `y` are divisible by `z`
 
 ## Usage
 `cargo run`
