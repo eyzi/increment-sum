@@ -32,8 +32,6 @@ Result:
 Start: 1
 End: 10
 Increment: 1
-Number of Addends: 10
-Multiplier: 5
 Sum: 55
 ```
 
@@ -46,8 +44,6 @@ Result:
 Start: 10
 End: 100
 Increment: 5
-Number of Addends: 19
-Multiplier: 9.5
 Sum: 1045
 ```
 
@@ -60,7 +56,5 @@ Result:
 Start: 1
 End: 10
 Increment: 0.5
-Number of Addends: 19
-Multiplier: 9.5
 Sum: 104.5
 ```
