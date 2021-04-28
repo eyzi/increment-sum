@@ -39,18 +39,36 @@ fn main() {
         }
     };
 
-    if args_object.start % args_object.increment != 0f64 {
-        panic!(
-            "Start ({}) must be divisible by {}",
-            args_object.start, args_object.increment
-        )
+    if args_object.increment == 0_f64 {
+        panic!("Increment ({}) must be non-zero", args_object.increment)
     };
-    if args_object.end % args_object.increment != 0f64 {
-        panic!(
-            "End ({}) must be divisible by {}",
-            args_object.end, args_object.increment
-        )
-    };
+    if args_object.start < args_object.end {
+        if args_object.increment < 0_f64 {
+            panic!(
+                "Increment ({}) must be positive for ascending numbers",
+                args_object.increment
+            )
+        }
+        if (args_object.end - args_object.start) % args_object.increment != 0_f64 {
+            panic!(
+                "The difference between {} and {} must be divisible by {}",
+                args_object.end, args_object.start, args_object.increment
+            )
+        }
+    } else {
+        if args_object.increment > 0_f64 {
+            panic!(
+                "Increment ({}) must be negative for descending numbers",
+                args_object.increment
+            )
+        }
+        if (args_object.start - args_object.end) % args_object.increment != 0_f64 {
+            panic!(
+                "The difference between {} and {} must be divisible by {}",
+                args_object.start, args_object.end, args_object.increment
+            )
+        }
+    }
 
     println!(
         "Start: {}\nEnd: {}\nIncrement: {}",
